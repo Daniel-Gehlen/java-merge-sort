@@ -1,3 +1,15 @@
+# Merge Sort Implementation in Java
+
+Este repositório contém uma implementação em Java do algoritmo Merge Sort, 
+uma técnica de ordenação do tipo dividir-e-conquistar com complexidade O(n log n).
+
+## Como Executar
+1. Compile: `javac MergeSort.java`
+2. Execute: `java MergeSort`
+
+## Diagrama do Algoritmo
+
+```mermaid
 graph TD
 
 subgraph MergeSortClass
@@ -35,3 +47,11 @@ sortedArray --> |printed by| printOutput
 
 classDef java fill:#f9f,stroke:#333;
 class mergeSort,merge,Arrays.copyOfRange,System.arraycopy java;
+```
+
+## Testes
+Compile e execute o arquivo de teste:
+```bash
+javac -cp junit.jar MergeSortTest.java
+java -cp junit.jar:. org.junit.runner.JUnitCore MergeSortTest
+```
